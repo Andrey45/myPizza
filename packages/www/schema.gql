@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type PizzaType {
+  id: Int!
+  title: String!
+  price: Float!
+  annotation: String!
+  description: String!
+  ingredientsId: [Int!]!
+}
+
+type Query {
+  findAllPizza: [PizzaType!]!
+  findPizzaId(id: Float!): PizzaType!
+}
